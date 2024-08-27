@@ -11,10 +11,11 @@
   "scripts": {
     "prepublishOnly": "bun run build",
     "lint": "node ./scripts/verify-names.js",
-    "prebuild": "rimraf ./{base} ./{react}/{base} ./optimized/{base}",
-    "build": "bun run build-base && bun run build-react",
+    "prebuild": "rimraf ./{base,brand} ./{react}/{base,brand} ./optimized/{base,brand}",
+    "build": "bun run build-base && bun run build-brand && bun run build-react",
     "build-react": "node ./scripts/build.js react",
     "build-base": "rimraf ./base ./optimized/base && svgo --config=svgo.base.mjs -f ./src/base -o ./optimized/base --pretty --indent=2",
+    "build-brand": "rimraf ./brand ./optimized/brand && svgo --config=svgo.brand.mjs -f ./src/brand -o ./optimized/brand --pretty --indent=2",
     "release-channel": "node ./scripts/release-channel.js",
     "release-notes": "node ./scripts/release-notes.js"
   },

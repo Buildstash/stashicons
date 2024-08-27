@@ -4,6 +4,7 @@ const { deprecated } = require('./deprecated')
 
 const srcPaths = {
   base: path.resolve(__dirname, '../src/base/'),
+  brand: path.resolve(__dirname, '../src/brand/'),
 }
 
 async function main() {

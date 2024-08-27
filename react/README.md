@@ -6,16 +6,16 @@
 
 ## React
 
-First, install `@stashicons/react` from npm:
+First, install `stashicons/react` from npm:
 
 ```sh
-npm install @stashicons/react
+npm install stashicons/react
 ```
 
 Now each icon can be imported individually as a React component:
 
 ```js
-import { CodeIcon } from '@stashicons/react/base'
+import { CodeIcon } from 'stashicons/react/base'
 
 function MyComponent() {
   return (
@@ -27,7 +27,7 @@ function MyComponent() {
 }
 ```
 
-The icons can be imported from `@stashicons/react/base`.
+The icons can be imported from `stashicons/react/base` or `stashicons/react/brand`.
 
 Icons use an upper camel case naming convention and are always suffixed with the word `Icon`.
 

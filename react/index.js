@@ -9,7 +9,7 @@ module.exports = new Proxy(
       }
 
       throw new Error(
-        `Importing from \`@stashicons/react\` directly is not supported. Please import from \`@stashicons/react/base\` instead.`
+        `Importing from \`@stashicons/react\` directly is not supported. Please import from \`stashicons/react/base\`, or \`stashicons/react/brand\` instead.`
       )
     },
   }

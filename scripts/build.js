@@ -191,18 +191,25 @@ async function main(package) {
 
   console.log(`Building ${package} package...`)
 
-  await Promise.all([rimraf(`./${package}/20/*`)])
+  await Promise.all([
+    rimraf(`./${package}/base/*`),
+    rimraf(`./${package}/brand/*`)
+  ])
 
   await Promise.all([
     buildIcons(package, 'base', 'cjs'),
     buildIcons(package, 'base', 'esm'),
+    buildIcons(package, 'brand', 'cjs'),
+    buildIcons(package, 'brand', 'esm'),
     ensureWriteJson(`./${package}/base/esm/package.json`, esmPackageJson),
     ensureWriteJson(`./${package}/base/package.json`, cjsPackageJson),
+    ensureWriteJson(`./${package}/brand/esm/package.json`, esmPackageJson),
+    ensureWriteJson(`./${package}/brand/package.json`, cjsPackageJson),
   ])
 
   let packageJson = JSON.parse(await fs.readFile(`./${package}/package.json`, 'utf8'))
 
-  packageJson.exports = await buildExports(['base'])
+  packageJson.exports = await buildExports(['base', 'brand'])
 
   await ensureWriteJson(`./${package}/package.json`, packageJson)
 

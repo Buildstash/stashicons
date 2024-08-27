@@ -10,7 +10,8 @@
     "url": "https://github.com/buildstash/stashicons.git"
   },
   "files": [
-    "20",
+    "base",
+    "brand",
     "index.esm.js",
     "index.js",
     "LICENSE",
@@ -47,6 +48,29 @@
     "./base/esm/*.js": {
       "types": "./base/*.d.ts",
       "import": "./base/esm/*.js"
+    },
+    "./brand": {
+      "types": "./brand/index.d.ts",
+      "import": "./brand/esm/index.js",
+      "require": "./brand/index.js"
+    },
+    "./brand/*": {
+      "types": "./brand/*.d.ts",
+      "import": "./brand/esm/*.js",
+      "require": "./brand/*.js"
+    },
+    "./brand/*.js": {
+      "types": "./brand/*.d.ts",
+      "import": "./brand/esm/*.js",
+      "require": "./brand/*.js"
+    },
+    "./brand/esm/*": {
+      "types": "./brand/*.d.ts",
+      "import": "./brand/esm/*.js"
+    },
+    "./brand/esm/*.js": {
+      "types": "./brand/*.d.ts",
+      "import": "./brand/esm/*.js"
     }
   },
   "publishConfig": {
