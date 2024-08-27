@@ -1,0 +1,7 @@
+module.exports.BrandAndroidIcon = require("./BrandAndroidIcon.js")
+module.exports.BrandAppleIcon = require("./BrandAppleIcon.js")
+module.exports.BrandGenericIcon = require("./BrandGenericIcon.js")
+module.exports.BrandIosIcon = require("./BrandIosIcon.js")
+module.exports.BrandLinuxTuxIcon = require("./BrandLinuxTuxIcon.js")
+module.exports.BrandMetaIcon = require("./BrandMetaIcon.js")
+module.exports.BrandWindowsIcon = require("./BrandWindowsIcon.js")

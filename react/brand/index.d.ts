@@ -1,0 +1,7 @@
+export { default as BrandAndroidIcon } from './BrandAndroidIcon'
+export { default as BrandAppleIcon } from './BrandAppleIcon'
+export { default as BrandGenericIcon } from './BrandGenericIcon'
+export { default as BrandIosIcon } from './BrandIosIcon'
+export { default as BrandLinuxTuxIcon } from './BrandLinuxTuxIcon'
+export { default as BrandMetaIcon } from './BrandMetaIcon'
+export { default as BrandWindowsIcon } from './BrandWindowsIcon'
