@@ -4,17 +4,17 @@
   "license": "MIT",
   "repository": "https://github.com/buildstash/stashicons.git",
   "files": [
-    "20/",
+    "base/",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
     "prepublishOnly": "bun run build",
     "lint": "node ./scripts/verify-names.js",
-    "prebuild": "rimraf ./{20} ./{react}/{20} ./optimized/{20}",
-    "build": "bun run build-20 && bun run build-react",
+    "prebuild": "rimraf ./{base} ./{react}/{base} ./optimized/{base}",
+    "build": "bun run build-base && bun run build-react",
     "build-react": "node ./scripts/build.js react",
-    "build-20": "rimraf ./20 ./optimized/20 && svgo --config=svgo.20.mjs -f ./src/20 -o ./optimized/20 --pretty --indent=2 && mkdir -p ./20 && cp -R ./optimized/20 ./20",
+    "build-base": "rimraf ./base ./optimized/base && svgo --config=svgo.base.mjs -f ./src/base -o ./optimized/base --pretty --indent=2",
     "release-channel": "node ./scripts/release-channel.js",
     "release-notes": "node ./scripts/release-notes.js"
   },

@@ -194,15 +194,15 @@ async function main(package) {
   await Promise.all([rimraf(`./${package}/20/*`)])
 
   await Promise.all([
-    buildIcons(package, '20', 'cjs'),
-    buildIcons(package, '20', 'esm'),
-    ensureWriteJson(`./${package}/20/esm/package.json`, esmPackageJson),
-    ensureWriteJson(`./${package}/20/package.json`, cjsPackageJson),
+    buildIcons(package, 'base', 'cjs'),
+    buildIcons(package, 'base', 'esm'),
+    ensureWriteJson(`./${package}/base/esm/package.json`, esmPackageJson),
+    ensureWriteJson(`./${package}/base/package.json`, cjsPackageJson),
   ])
 
   let packageJson = JSON.parse(await fs.readFile(`./${package}/package.json`, 'utf8'))
 
-  packageJson.exports = await buildExports(['20'])
+  packageJson.exports = await buildExports(['base'])
 
   await ensureWriteJson(`./${package}/package.json`, packageJson)
 

@@ -3,7 +3,7 @@ const path = require('path')
 const { deprecated } = require('./deprecated')
 
 const srcPaths = {
-  base: path.resolve(__dirname, '../src/20/'),
+  base: path.resolve(__dirname, '../src/base/'),
 }
 
 async function main() {

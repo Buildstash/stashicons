@@ -2,7 +2,5 @@
 !*.js
 !.gitignore
 !package.json
-!outline
-!solid
 !LICENSE
 !README.md

@@ -25,28 +25,28 @@
     "./package.json": {
       "default": "./package.json"
     },
-    "./20": {
-      "types": "./20/index.d.ts",
-      "import": "./20/esm/index.js",
-      "require": "./20/index.js"
+    "./base": {
+      "types": "./base/index.d.ts",
+      "import": "./base/esm/index.js",
+      "require": "./base/index.js"
     },
-    "./20/*": {
-      "types": "./20/*.d.ts",
-      "import": "./20/esm/*.js",
-      "require": "./20/*.js"
+    "./base/*": {
+      "types": "./base/*.d.ts",
+      "import": "./base/esm/*.js",
+      "require": "./base/*.js"
     },
-    "./20/*.js": {
-      "types": "./20/*.d.ts",
-      "import": "./20/esm/*.js",
-      "require": "./20/*.js"
+    "./base/*.js": {
+      "types": "./base/*.d.ts",
+      "import": "./base/esm/*.js",
+      "require": "./base/*.js"
     },
-    "./20/esm/*": {
-      "types": "./20/*.d.ts",
-      "import": "./20/esm/*.js"
+    "./base/esm/*": {
+      "types": "./base/*.d.ts",
+      "import": "./base/esm/*.js"
     },
-    "./20/esm/*.js": {
-      "types": "./20/*.d.ts",
-      "import": "./20/esm/*.js"
+    "./base/esm/*.js": {
+      "types": "./base/*.d.ts",
+      "import": "./base/esm/*.js"
     }
   },
   "publishConfig": {
