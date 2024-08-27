@@ -33,4 +33,4 @@ Icons use an upper camel case naming convention and are always suffixed with the
 
 ## License
 
-This library is MIT licensed.
+This library is [MIT licensed](https://github.com/Buildstash/stashicons/blob/master/LICENSE). See [license file](https://github.com/Buildstash/stashicons/blob/master/LICENSE) for terms and copyright notices.
