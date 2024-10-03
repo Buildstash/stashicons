@@ -15,11 +15,9 @@ function XSmallIcon({
   }, props), title ? /*#__PURE__*/React.createElement("title", {
     id: titleId
   }, title) : null, /*#__PURE__*/React.createElement("path", {
-    stroke: "#fff",
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    strokeWidth: 1.5,
-    d: "m13.5 6.5-7 7m0-7 7 7"
+    fillRule: "evenodd",
+    d: "M5.97 5.97a.75.75 0 0 1 1.06 0L10 8.94l2.97-2.97a.75.75 0 1 1 1.06 1.06L11.06 10l2.97 2.97a.75.75 0 1 1-1.06 1.06L10 11.06l-2.97 2.97a.75.75 0 0 1-1.06-1.06L8.94 10 5.97 7.03a.75.75 0 0 1 0-1.06Z",
+    clipRule: "evenodd"
   }));
 }
 const ForwardRef = /*#__PURE__*/ React.forwardRef(XSmallIcon);

@@ -1,5 +1,5 @@
-const React = require("react");
-function XSmallIcon({
+import * as React from "react";
+function CheckSmallIcon({
   title,
   titleId,
   ...props
@@ -16,9 +16,9 @@ function XSmallIcon({
     id: titleId
   }, title) : null, /*#__PURE__*/React.createElement("path", {
     fillRule: "evenodd",
-    d: "M5.97 5.97a.75.75 0 0 1 1.06 0L10 8.94l2.97-2.97a.75.75 0 1 1 1.06 1.06L11.06 10l2.97 2.97a.75.75 0 1 1-1.06 1.06L10 11.06l-2.97 2.97a.75.75 0 0 1-1.06-1.06L8.94 10 5.97 7.03a.75.75 0 0 1 0-1.06Z",
+    d: "M14.77 6.21a.75.75 0 0 1 .02 1.06l-6.25 6.5a.75.75 0 0 1-1.097-.018l-2.25-2.5a.75.75 0 1 1 1.114-1.004l1.711 1.901L13.71 6.23a.75.75 0 0 1 1.06-.02Z",
     clipRule: "evenodd"
   }));
 }
-const ForwardRef = /*#__PURE__*/ React.forwardRef(XSmallIcon);
-module.exports = ForwardRef;
+const ForwardRef = /*#__PURE__*/ React.forwardRef(CheckSmallIcon);
+export default ForwardRef;
