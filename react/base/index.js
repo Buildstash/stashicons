@@ -1,4 +1,5 @@
 module.exports.CheckSmallIcon = require("./CheckSmallIcon.js")
+module.exports.ChevronUpDownIcon = require("./ChevronUpDownIcon.js")
 module.exports.SearchIcon = require("./SearchIcon.js")
 module.exports.UploadIcon = require("./UploadIcon.js")
 module.exports.XCircleSmallIcon = require("./XCircleSmallIcon.js")

@@ -1,4 +1,5 @@
 export { default as CheckSmallIcon } from './CheckSmallIcon'
+export { default as ChevronUpDownIcon } from './ChevronUpDownIcon'
 export { default as SearchIcon } from './SearchIcon'
 export { default as UploadIcon } from './UploadIcon'
 export { default as XCircleSmallIcon } from './XCircleSmallIcon'
