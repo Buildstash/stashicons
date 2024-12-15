@@ -15,11 +15,9 @@ function PackageIcon({
   }, props), title ? /*#__PURE__*/React.createElement("title", {
     id: titleId
   }, title) : null, /*#__PURE__*/React.createElement("path", {
-    stroke: "#fff",
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    strokeWidth: 1.728,
-    d: "m4 6.932 6 3.245M4 6.932v6.72l6 3.245M4 6.932l3-1.498m9 1.498-6-2.995-3 1.497m9 1.498v6.72l-6 3.245m6-9.965-3 1.622m-3 1.623v6.72m0-6.72 3-1.623m0 0-6-3.12"
+    fillRule: "evenodd",
+    d: "M9.614 3.164a.864.864 0 0 1 .772 0l6 2.995a.864.864 0 0 1 .478.773v6.72a.864.864 0 0 1-.453.76l-6 3.245a.864.864 0 0 1-.822 0l-6-3.245a.864.864 0 0 1-.453-.76v-6.72c0-.328.185-.627.478-.773l6-2.995ZM8.903 5.45l4.09 2.126 1.134-.613L10 4.903l-1.097.547Zm6.233 2.931-4.272 2.31v4.756l4.272-2.31V8.381Zm-6 7.066v-4.755l-4.272-2.31v4.755l4.272 2.31ZM5.873 6.963 10 9.194l1.156-.625-4.164-2.165-1.119.559Z",
+    clipRule: "evenodd"
   }));
 }
 const ForwardRef = /*#__PURE__*/ React.forwardRef(PackageIcon);
