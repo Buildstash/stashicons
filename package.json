@@ -40,6 +40,10 @@
     "./react/brand": {
       "import": "./react/brand/index.js",
       "types": "./react/brand/index.d.ts"
+    },
+    "./react/base": {
+      "import": "./react/base/index.js",
+      "types": "./react/base/index.d.ts"
     }
   }
 }
