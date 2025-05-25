@@ -1,6 +1,6 @@
 {
   "name": "stashicons",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "license": "MIT",
   "repository": "https://github.com/buildstash/stashicons.git",
   "files": [
@@ -27,5 +27,19 @@
     "prettier": "^2.8.7",
     "rimraf": "^3.0.2",
     "svgo": "^3.0.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./react": {
+      "import": "./react/index.js",
+      "types": "./react/index.d.ts"
+    },
+    "./react/brand": {
+      "import": "./react/brand/index.js",
+      "types": "./react/brand/index.d.ts"
+    }
   }
 }
