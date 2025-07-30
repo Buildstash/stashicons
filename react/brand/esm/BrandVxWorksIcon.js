@@ -1,0 +1,22 @@
+import * as React from "react";
+function BrandVxWorksIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M11.762 15.914c0-.005.294-.535.654-1.18l.67-1.2c.012-.023 1.309 2.247 1.351 2.365.005.015-.51.024-1.333.024-.738 0-1.342-.004-1.342-.009Zm-1.936-.195c-.02-.032-1.51-2.603-3.31-5.713s-3.311-5.72-3.358-5.798l-.084-.144 4.665.013L9.965 7.92c1.224 2.114 2.221 3.861 2.216 3.882a421.18 421.18 0 0 1-2.31 3.967c-.005.004-.025-.018-.045-.05Zm2.111-7.06a86.642 86.642 0 0 1-1.108-1.966c.003-.01.34-.6.75-1.311l.746-1.291.977-.001c.537 0 1.56-.008 2.272-.017l1.295-.017-1.896 3.275a324.69 324.69 0 0 1-1.909 3.274c-.007 0-.514-.876-1.127-1.946Z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandVxWorksIcon);
+export default ForwardRef;
