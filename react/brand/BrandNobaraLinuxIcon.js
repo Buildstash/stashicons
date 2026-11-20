@@ -1,0 +1,22 @@
+const React = require("react");
+function BrandNobaraLinuxIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M15.908 9.908v4.144a1.772 1.772 0 0 1-1.772 1.765h-.23a1.773 1.773 0 0 1-1.543-1.758v-3.644l1.773-.507-1.832-.522a2.364 2.364 0 0 0-4.668.522v1.182a1.182 1.182 0 0 0 1.182 1.182 1.773 1.773 0 0 1 1.773 1.773v1.964a1.77 1.77 0 0 0-1.773-1.772 1.77 1.77 0 0 0-1.533.88 1.771 1.771 0 0 1-1.191.7h-.23a1.772 1.772 0 0 1-1.773-1.764v-8.28a1.772 1.772 0 0 1 3.164-1.098A5.882 5.882 0 0 1 10 4a5.909 5.909 0 0 1 5.908 5.908zm-4.727 0A1.18 1.18 0 0 1 10 11.09a1.182 1.182 0 1 1 1.181-1.182z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandNobaraLinuxIcon);
+module.exports = ForwardRef;

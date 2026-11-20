@@ -1,0 +1,22 @@
+const React = require("react");
+function BrandFavroIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M9.793 4.827a3.312 3.312 0 0 0-3.31 3.31v.387a3.752 3.752 0 0 1 1.655 1.635V8.137a1.651 1.651 0 0 1 1.655-1.655.83.83 0 0 0 .827-.828.83.83 0 0 0-.828-.828zM4.828 8.552A.83.83 0 0 0 4 9.38a.83.83 0 0 0 .828.828 1.651 1.651 0 0 1 1.654 1.654v2.483a.83.83 0 0 0 .828.828.83.83 0 0 0 .828-.828v-2.482a3.312 3.312 0 0 0-3.31-3.311zm7.862 0a3.312 3.312 0 0 0-3.311 3.311 3.312 3.312 0 0 0 3.311 3.31 3.292 3.292 0 0 0 1.731-.489c.131.29.42.49.751.49a.83.83 0 0 0 .828-.828V9.38a.83.83 0 0 0-.828-.828.82.82 0 0 0-.751.49 3.287 3.287 0 0 0-1.731-.49zm0 1.656a1.651 1.651 0 0 1 1.655 1.655 1.651 1.651 0 0 1-1.655 1.655 1.651 1.651 0 0 1-1.655-1.655 1.651 1.651 0 0 1 1.655-1.655z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandFavroIcon);
+module.exports = ForwardRef;

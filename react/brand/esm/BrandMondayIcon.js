@@ -1,0 +1,22 @@
+import * as React from "react";
+function BrandMondayIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M5.493 13.579a1.499 1.499 0 0 1-1.306-.758 1.449 1.449 0 0 1 .04-1.491l2.69-4.224a1.5 1.5 0 0 1 1.328-.721c.54.013 1.03.316 1.285.792.25.474.22 1.044-.081 1.49L6.76 12.89a1.5 1.5 0 0 1-1.268.689ZM10.106 13.579c-.543 0-1.042-.29-1.304-.756a1.444 1.444 0 0 1 .041-1.488l2.684-4.213c.277-.47.785-.751 1.33-.737a1.495 1.495 0 0 1 1.292.796 1.444 1.444 0 0 1-.096 1.497l-2.684 4.213c-.276.43-.752.69-1.263.688ZM14.616 10.903a1.385 1.356 0 1 0 0 2.711 1.385 1.356 0 1 0 0-2.71z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandMondayIcon);
+export default ForwardRef;

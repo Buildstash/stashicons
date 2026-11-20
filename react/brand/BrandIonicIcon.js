@@ -1,0 +1,22 @@
+const React = require("react");
+function BrandIonicIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "m15.461 7.514-.051-.115-.085.094c-.204.232-.464.41-.752.518l-.08.03.033.077a4.872 4.872 0 0 1 .375 1.88 4.909 4.909 0 0 1-4.903 4.903A4.905 4.905 0 0 1 5.097 10 4.91 4.91 0 0 1 10 5.097c.734 0 1.442.16 2.1.473l.077.038.034-.077a1.883 1.883 0 0 1 .552-.727l.099-.08-.113-.058A5.952 5.952 0 0 0 10 4c-3.309 0-6 2.691-6 6s2.691 6 6 6a6.006 6.006 0 0 0 5.461-8.486zM10 7.265A2.738 2.738 0 0 0 7.265 10 2.738 2.738 0 0 0 10 12.735 2.738 2.738 0 0 0 12.735 10 2.74 2.74 0 0 0 10 7.265zm5.173-1.003a1.247 1.247 0 1 1-2.495 0 1.247 1.247 0 0 1 2.494 0z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandIonicIcon);
+module.exports = ForwardRef;

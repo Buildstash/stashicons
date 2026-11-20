@@ -1,0 +1,22 @@
+const React = require("react");
+function BrandGarudaLinuxIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M9.12 5.59C7.41 7.29 5.683 9.032 4 10.732l3.66 3.665 3.751.013 3.168-3.158-6.878-.006-.762.77 5.756.012-1.599 1.598H7.978l-2.892-2.892 4.37-4.37h3.142l2.407 2.407-3.75-.005v-1.06l-1.84 1.84c1.937.002 3.873.002 5.81 0v1.051L16 9.823l-.002-1.153-3.08-3.079z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandGarudaLinuxIcon);
+module.exports = ForwardRef;

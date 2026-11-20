@@ -1,0 +1,22 @@
+const React = require("react");
+function BrandGradleIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M15.348 6.149a1.903 1.903 0 0 0-2.646-.045.184.184 0 0 0 0 .266l.23.235a.181.181 0 0 0 .238.016 1.091 1.091 0 0 1 1.43 1.645c-1.512 1.51-3.528-2.723-8.106-.541a.62.62 0 0 0-.267.873l.786 1.356a.619.619 0 0 0 .84.23l.019-.01-.015.01.344-.191a8.041 8.041 0 0 0 1.097-.818.192.192 0 0 1 .249-.008.178.178 0 0 1 .008.267 8.217 8.217 0 0 1-1.158.87h-.012l-.348.196a.979.979 0 0 1-.482.125.994.994 0 0 1-.863-.495L5.95 8.848c-1.42 1.012-2.293 2.954-1.82 5.413a.181.181 0 0 0 .177.148h.837a.181.181 0 0 0 .185-.166 1.239 1.239 0 0 1 2.458 0 .18.18 0 0 0 .178.159h.82a.181.181 0 0 0 .178-.159 1.239 1.239 0 0 1 2.457 0 .181.181 0 0 0 .179.159h.813a.181.181 0 0 0 .182-.178c.018-1.148.328-2.466 1.21-3.126 3.054-2.285 2.251-4.243 1.544-4.95zm-3.115 3.45-.583-.292a.365.365 0 1 1 .583.293z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandGradleIcon);
+module.exports = ForwardRef;

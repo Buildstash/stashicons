@@ -1,0 +1,22 @@
+import * as React from "react";
+function BrandClickupIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "m5 13.22 1.845-1.415c.98 1.28 2.022 1.87 3.182 1.87 1.153 0 2.165-.583 3.101-1.852L15 13.203C13.649 15.033 11.97 16 10.027 16 8.088 16 6.394 15.039 5 13.22zm5.02-6.145-3.284 2.83-1.518-1.76L10.028 4l4.771 4.148-1.525 1.754z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandClickupIcon);
+export default ForwardRef;

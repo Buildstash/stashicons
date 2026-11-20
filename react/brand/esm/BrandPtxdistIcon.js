@@ -1,0 +1,24 @@
+import * as React from "react";
+function BrandPtxdistIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    d: "M15.997 14.93c0 .592-.48 1.072-1.072 1.072H5.077c-.593 0-1.073-.48-1.073-1.072V5.082c0-.593.48-1.073 1.073-1.073h9.848c.592 0 1.072.48 1.072 1.073v9.848zM5.032 4.652a.348.348 0 1 0 0 .697.348.348 0 1 0 0-.697zm9.955 0a.348.348 0 1 0 0 .697.348.348 0 1 0 0-.697zm0 9.956a.348.348 0 1 0 0 .696.348.348 0 1 0 0-.696zm-9.955 0a.348.348 0 1 0 0 .696.348.348 0 1 0 0-.696zm9.384-7.093a1.755 1.755 0 0 0-2.757-1.43 1.458 1.458 0 0 0-1.435-1.195 1.453 1.453 0 0 0-1.275.753 1.764 1.764 0 0 0-1.45-.778c-.96 0-1.74.78-1.74 1.742 0 .651.373 1.218.893 1.517v-.556h.373v1.66h5.946v-.626h.373v.53a1.73 1.73 0 0 0 1.072-1.617zm-1.445 3.205H7.025c0 1.517.491 2.8 2.232 3.075l.6.629a.195.195 0 0 0 .284 0l.6-.63c1.739-.274 2.23-1.556 2.23-3.074zm-2.167 1.497v-.053a.37.37 0 0 1 .365-.365.37.37 0 0 1 .366.365v.053h.512v-.053a.879.879 0 0 0-1.756 0v.053h.513zm-2.407 0v-.053a.37.37 0 0 1 .366-.365.37.37 0 0 1 .365.365v.053h.513v-.053a.879.879 0 0 0-1.756 0v.053h.512zm2.867.613s-.36-.286-1.263-.286c-.904 0-1.262.287-1.262.287L10 14.138l1.264-1.307z",
+    clipRule: "evenodd"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandPtxdistIcon);
+export default ForwardRef;

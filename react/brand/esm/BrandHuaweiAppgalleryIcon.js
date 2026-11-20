@@ -1,0 +1,22 @@
+import * as React from "react";
+function BrandHuaweiAppgalleryIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M7.367 4C4.902 4 4 4.902 4 7.367v5.267C4 15.099 4.902 16 7.367 16h5.264C15.098 16 16 15.098 16 12.634V7.366C16 4.902 15.098 4 12.633 4zM8 6h.282A1.72 1.72 0 0 0 10 7.717 1.72 1.72 0 0 0 11.718 6H12c0 1.103-.897 2-2 2s-2-.897-2-2zm3.234 4h.26l.356 1.08.349-1.079h.33l-.546 1.57h-.266l-.357-1.032-.357 1.032h-.264l-.548-1.57h.339l.347 1.079zm3.118 0h.315v1.569h-.315zm-9.019 0h.319v.633h.72V10h.318v1.571h-.319v-.638h-.72v.638h-.318zm2.834 0h.319v.886c0 .45-.249.709-.68.709-.428 0-.674-.254-.674-.696v-.898h.318v.887c0 .262.128.403.36.403.23 0 .357-.137.357-.392zm1.172 0h.281l.69 1.57h-.335l-.14-.327h-.72l-.143.327h-.326zm3.446.001h1.157v.286H13.1v.321h.58v.287h-.58v.389h.872v.286h-1.187zm-3.311.397-.24.561h.482z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandHuaweiAppgalleryIcon);
+export default ForwardRef;

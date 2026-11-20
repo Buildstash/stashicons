@@ -1,0 +1,22 @@
+import * as React from "react";
+function BrandChromeIcon({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", Object.assign({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("path", {
+    d: "M10 4a5.988 5.988 0 0 0-4.684 2.25l1.976 3.425A2.727 2.727 0 0 1 10 7.271h5.346A6 6 0 0 0 10 4zM4.966 6.735A5.971 5.971 0 0 0 4 10a6 6 0 0 0 5.095 5.932l1.976-3.424a2.725 2.725 0 0 1-3.433-1.144zm6.67 1.083a2.723 2.723 0 0 1 .726 3.545L9.69 15.992a6 6 0 0 0 5.901-8.174zM10 12.182a2.182 2.182 0 1 1 0-4.364 2.182 2.182 0 0 1 0 4.364Z"
+  }));
+}
+const ForwardRef = /*#__PURE__*/ React.forwardRef(BrandChromeIcon);
+export default ForwardRef;
